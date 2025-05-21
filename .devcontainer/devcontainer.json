@@ -6,10 +6,11 @@
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "features": {
       "ghcr.io/devcontainers/features/python:1": {
-          "version": "3.11.4",
+          "version": "3.11.12",
           "installJupyterlab": true
       },
-      "ghcr.io/devcontainers/features/azure-cli:1": {}
+        "ghcr.io/devcontainers/features/azure-cli:1": {},
+        "ghcr.io/va-h/devcontainers-features/uv:1": {}
   },
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
@@ -18,7 +19,8 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "pip3 install --user -r requirements.txt",
+  // "postCreateCommand": "pip3 install --user -r requirements.txt",
+  "postCreateCommand": "uv sync",
 
   // Configure tool-specific properties.
   "customizations": {
@@ -30,8 +32,7 @@
         "oderwat.indent-rainbow",
         "KevinRose.vsc-python-indent",
         "esbenp.prettier-vscode",
-        "kisstkondoros.vscode-gutter-preview",
-        "GitHub.copilot"
+        "kisstkondoros.vscode-gutter-preview"
       ]
     }
   },

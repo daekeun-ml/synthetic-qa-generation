@@ -1,0 +1,32 @@
+[project]
+name = "synthetic-qa-generation"
+version = "0.1.0"
+description = "Generate Synthetic QnAs from real-world data"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "azure-ai-contentsafety>=1.0.0",
+    "azure-ai-documentintelligence>=1.0.2",
+    "azure-ai-generative>=1.0.0b11",
+    "azure-cognitiveservices-speech>=1.44.0",
+    "azure-identity>=1.23.0",
+    "azure-search-documents>=11.5.2",
+    "datasets>=3.6.0",
+    "jinja2>=3.1.6",
+    "jsonlines>=4.0.0",
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.24",
+    "langchain-openai>=0.3.17",
+    "markdown>=3.8",
+    "markdownify>=1.1.0",
+    "matplotlib>=3.10.3",
+    "openai>=1.79.0",
+    "opencv-python-headless>=4.11.0.86",
+    "pandas>=2.2.3",
+    "pdf2image>=1.17.0",
+    "pymupdf>=1.25.5",
+    "python-dotenv>=1.1.0",
+    "scikit-learn>=1.6.1",
+    "tiktoken>=0.9.0",
+    "transformers>=4.52.1",
+]
