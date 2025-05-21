@@ -78,7 +78,20 @@ If you want to use the Unstructured toolkit for processing a complex PDF, please
 Please start a new project by connecting to Codespace Project. The environment required for hands-on is automatically configured through devcontainer, so you only need to run a Jupyter notebook.
 
 ### Option 3. Your local PC
-Please start by installing the required packages on your local PC with `pip install -r requirements.txt`
+Please start by installing the required packages on your local PC through uv.
+
+```bash
+uv sync
+```
+
+To use Jupyter Notebook in VS Code or Cursor, choose one of the two methods below:
+1. Click **Select Kernel** - **Python Environments**, and then select **.venv**.
+<img src="./imgs/quick-start-01.png" width="100%"/>
+<img src="./imgs/quick-start-02.png" width="50%"/>
+
+2. Click **Python: Select Interpreter** with the shortcut **Ctrl + Shift + P (Windows/Linux)**, **Cmd + Shift + P (macOS)**, and then select **.venv**.
+<img src="./imgs/quick-start-03.png" width="100%"/>
+
 
 ## References
 - Evolve-Instruct: https://arxiv.org/pdf/2304.12244
